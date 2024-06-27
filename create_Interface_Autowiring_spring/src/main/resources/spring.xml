@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="alien" class="org.telusko.Alien" autowire="byType">
+        <property name="age" value="21"/>
+        <!--        <property name="com" ref="laptop"/>-->
+    </bean>
+    <bean id="laptop" class="org.telusko.Laptop" primary="true"/>
+    <bean id="desktop" class="org.telusko.DeskTop"/>
+
+
+<!--    <bean id="alien" class="org.telusko.Alien" autowire="byType">-->
+<!--        <property name="age" value="21"/>-->
+<!--        &lt;!&ndash;        <property name="com" ref="laptop"/>&ndash;&gt;-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    <bean id="laptop" class="org.telusko.Laptop"/>&ndash;&gt;-->
+<!--    <bean id="desktop" class="org.telusko.DeskTop"/>-->
+
+
+<!--    <bean id="alien" class="org.telusko.Alien" autowire="byName">-->
+<!--        <property name="age" value="21"/>-->
+<!--&lt;!&ndash;        <property name="com" ref="laptop"/>&ndash;&gt;-->
+<!--    </bean>-->
+<!--    <bean id="laptop" class="org.telusko.Laptop"/>-->
+<!--    <bean id="com" class="org.telusko.DeskTop"/>-->
+
+
+<!--    <bean id="alien" class="org.telusko.Alien" >-->
+<!--        <property name="age" value="21"/>-->
+<!--        <property name="com" ref="laptop"/>-->
+<!--    </bean>-->
+<!--    <bean id="laptop" class="org.telusko.Laptop"/>-->
+<!--    <bean id="desktop" class="org.telusko.DeskTop"/>-->
+
+</beans>
