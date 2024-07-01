@@ -2,7 +2,7 @@ package org.telusko;
 
 public class Desktop implements Computer {
     public Desktop() {
-        System.out.println("Desktop created !");
+        System.out.println("Desktop object created !");
     }
 
     public void check() {
