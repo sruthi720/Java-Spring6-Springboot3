@@ -1,5 +1,6 @@
-package com.telusko.app;
+package com.telusko.app.models;
 
+import com.telusko.app.models.Computer;
 import org.springframework.stereotype.Component;
 
 @Component

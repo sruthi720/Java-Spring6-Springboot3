@@ -1,4 +1,4 @@
-package com.telusko.app;
+package com.telusko.app.models;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
