@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-    @ModelAttribute("language")
+    @ModelAttribute("language   ")
     public String courseName(){
         return "Java";
     }
