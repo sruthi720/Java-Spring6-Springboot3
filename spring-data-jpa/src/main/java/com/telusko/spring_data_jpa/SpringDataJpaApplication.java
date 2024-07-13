@@ -41,7 +41,7 @@ public class SpringDataJpaApplication {
 		System.out.println(repo.findByName("Aiswarya"));
 */
 //		System.out.println(repo.findByMarksGreaterThan(95));
-		repo.delete(s1);//to delete
+		repo.delete(s1);
 
 	}
 
