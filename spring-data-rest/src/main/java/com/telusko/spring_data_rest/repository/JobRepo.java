@@ -1,15 +1,15 @@
-package com.teslusko.springboot_rest.repo;
+package com.telusko.spring_data_rest.repository;
 
-import com.teslusko.springboot_rest.model.JobPost;
+
+import com.telusko.spring_data_rest.model.JobPost;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface JobRepo extends JpaRepository<JobPost ,Integer> {
-    void deleteById(int postId);
-    List<JobPost> findByPostProfileContainingOrPostDescContaining(String postProfile, String postDesc);
+public interface JobRepo extends JpaRepository<JobPost,Integer> {
+
 }
 
 
