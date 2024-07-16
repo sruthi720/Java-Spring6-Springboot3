@@ -1,5 +1,7 @@
 package com.teslusko.springboot_rest.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,8 +13,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
-public class JobPost {
+@Entity
 
+public class JobPost {
+    @Id
     private int postId;
     private String postProfile;
     private String postDesc;
